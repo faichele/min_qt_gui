@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWin</class>
+ <widget class="QWidget" name="MainWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1106</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWin</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="TabLiveBild">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>1071</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Steuerung</string>
+     </attribute>
+     <widget class="QPushButton" name="BtnKameraTabStuerung">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kamera Starten</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LblKameraStartStopp">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kamer starten/stoppen</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LblConNodeRed">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connectivity Node-Red</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LblConJetsonNano">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connectivity Jetson Nano</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LblConKamera">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>250</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connectivity Kamera</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LblConBWCloud">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>200</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connectivity BW-Cloud</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>LiveBild</string>
+     </attribute>
+     <widget class="QPushButton" name="BtnKameraBild">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>520</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kamerabild (Start/stop)</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BtnKameraTabLiveBild">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>520</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Kamera Starten</string>
+      </property>
+     </widget>
+     <widget class="QLCDNumber" name="lcdTrackedbj">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>8</y>
+        <width>64</width>
+        <height>23</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="LblTracktObj">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>10</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Erfasste Objekte</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1106</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSteuerung">
+    <property name="title">
+     <string>Steuerung</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuLive_Bild">
+    <property name="title">
+     <string>Live-Bild</string>
+    </property>
+   </widget>
+   <addaction name="menuSteuerung"/>
+   <addaction name="menuLive_Bild"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
